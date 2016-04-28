@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fun TV Facts</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tvshow_name_friends">Friends</string>
+    <string name="tvshow_name_himym">How I Met Your Mother</string>
+    <string name="tvshow_name_got">Game Of Thrones</string>
+    <string name="tvshow_name_2_and_a_half_men">2 And a Half Men</string>
+
+    <string name="prev_button_text">Prev</string>
+    <string name="next_button_text">Next</string>
+    <string name="tvshow_friends_fun_fact_1">Every week before filming commenced, the cast would get together for a moment to prepare for the show. This was the moment that David Schwimmer was dreading before the finale because he knew it would make him emotional. “I started to lose it in this ritual that we had before the show," he said, "which is just a group hug, kind of get in a little circle, right before we come out. And that was the moment I was dreading for a long time because I knew that moment of just looking at everyone in their eyes, and saying ‘Have a good show’, and knowing that was the last time we were going to be able to be in our little circle.</string>
+    <string name="tvshow_himym_fun_fact_1">Neil Patrick Harris is really a talented magician. He is the president of The Magic Castle Club in Los Angeles.</string>
+    <string name="tvshow_got_fun_fact_1">It’s been banned by the Turkish military  In November 2014, it was reported that a number of television programmes, including Game of Thrones, had been banned in military schools belonging to the Turkish army, in order to protect young people from: "sexual exploitation, pornography, exhibitionism, abuse, harassment and all negative behaviours" (dragons weren’t mentioned).</string>
+    <string name="tvshow_2andahalf_fun_fact_1">In 2008 Charlie Sheen was earning $300,000 per episode. By 2011 he was being paid $1.8 million per episode, making him the highest paid actor on TV at the time</string>
+
+
+</resources>
