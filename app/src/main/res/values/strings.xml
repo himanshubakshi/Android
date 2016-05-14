@@ -6,13 +6,41 @@
     <string name="tvshow_name_himym">How I Met Your Mother</string>
     <string name="tvshow_name_got">Game Of Thrones</string>
     <string name="tvshow_name_2_and_a_half_men">2 And a Half Men</string>
+    <string name="tvshow_name_tbbt">The Big Bang Theory</string>
 
     <string name="prev_button_text">Prev</string>
     <string name="next_button_text">Next</string>
-    <string name="tvshow_friends_fun_fact_1">Every week before filming commenced, the cast would get together for a moment to prepare for the show. This was the moment that David Schwimmer was dreading before the finale because he knew it would make him emotional. “I started to lose it in this ritual that we had before the show," he said, "which is just a group hug, kind of get in a little circle, right before we come out. And that was the moment I was dreading for a long time because I knew that moment of just looking at everyone in their eyes, and saying ‘Have a good show’, and knowing that was the last time we were going to be able to be in our little circle.</string>
-    <string name="tvshow_himym_fun_fact_1">Neil Patrick Harris is really a talented magician. He is the president of The Magic Castle Club in Los Angeles.</string>
-    <string name="tvshow_got_fun_fact_1">It’s been banned by the Turkish military  In November 2014, it was reported that a number of television programmes, including Game of Thrones, had been banned in military schools belonging to the Turkish army, in order to protect young people from: "sexual exploitation, pornography, exhibitionism, abuse, harassment and all negative behaviours" (dragons weren’t mentioned).</string>
-    <string name="tvshow_2andahalf_fun_fact_1">In 2008 Charlie Sheen was earning $300,000 per episode. By 2011 he was being paid $1.8 million per episode, making him the highest paid actor on TV at the time</string>
 
+
+
+    <string name="tvshow_friends_fun_fact_1"><b>THE SHOW WAS ORIGINALLY CALLED INSOMNIA CAFÉ ... AND A BUNCH OF OTHER THINGS.</b> \n\nIn the early \'90s, the creators of Friends, David Crane and Marta Kauffman, wrote a seven-page pitch for Insomnia Café. In addition to the different title, the plot itself was quite different from what we know as Friends. For example, Ross and Rachel weren\'t the key relationship. Instead, Joey and Monica were supposed to be love interests.\nAfter NBC bought the pilot, the title became Friends Like Us. NBC president Warren Littlefield came up with another title that was also considered, Across the Hall. By the time they shot it, the title had switched again to Six of One. When the show premiered on September 22, 1994, they had finally landed on simply Friends.</string>
+    <string name="tvshow_friends_fun_fact_2"><b>THEY WERE THE FIRST TV CAST TO NEGOTIATE AS A GROUP.</b>\n\nDuring the first season, they were each receiving around $22,000 per episode. But allegedly, by the second season, each actor had a slightly different salary. In 1997, all six cast members refused to work until they all earned an equal salary of $100,000 per episode. This was big news. The New York Times reported, “Stars of hit shows often threaten to boycott their series in pursuit of higher salaries. What is unusual is this cast\'s effort to use solidarity as leverage.\nThis negotiation worked very well. By the final season, each cast member was earning $1 million per episode.</string>
+    <string name="tvshow_friends_fun_fact_3"><b>THE ROLE OF ROSS WAS WRITTEN FOR DAVID SCHWIMMER</b>\n\nThis may come as a surprise because Eric McCormack, the Will of Will &amp; Grace, made news when he said that he auditioned “two or three times” for Ross. But, executive producer Kevin Bright had worked with Schwimmer before, so the writers were already developing Ross\’s character in Schwimmer\’s voice. And indeed, Schwimmer was the first person cast on the show.</string>
+    <string name="tvshow_friends_fun_fact_4"><b>THE CAST HAD A HUDDLE BEFORE EVERY EPISODE.</b>\n\nEvery week before filming commenced, the cast would get together for a moment to prepare for the show. This was the moment that David Schwimmer was dreading before the finale because he knew it would make him emotional. “I started to lose it in this ritual that we had before the show," he said, "which is just a group hug, kind of get in a little circle, right before we come out. And that was the moment I was dreading for a long time because I knew that moment of just looking at everyone in their eyes, and saying \'Have a good show,\' and knowing that was the last time we were going to be able to be in our little circle.”</string>
+    <string name="tvshow_friends_fun_fact_5"><b>MANY PEOPLE, INCLUDING LISA KUDROW, THOUGHT THAT CHANDLER WAS GAY.</b>\n\nKudrow said that she was surprised to hear Perry’s interpretation of Chandler at the first table read because when she first read the script, she thought Chandler was supposed to be gay. And she wasn’t the only one. During the first few seasons of the show, many fans speculated about Chandler\'s sexual orientation. In 1997, David Crane told Entertainment Weekly, “No, Chandler isn\'t gay. Nor will he be gay.”</string>
+
+    <string name="tvshow_himym_fun_fact_1">Neil Patrick Harris is really a talented magician. He is the president of The Magic Castle Club in Los Angeles.</string>
+    <string name="tvshow_himym_fun_fact_2">fast2</string>
+    <string name="tvshow_himym_fun_fact_3">fast 3</string>
+    <string name="tvshow_himym_fun_fact_4">fast 4</string>
+    <string name="tvshow_himym_fun_fact_5">fast 5</string>
+
+    <string name="tvshow_got_fun_fact_1">It\'s been banned by the Turkish military  In November 2014, it was reported that a number of television programmes, including Game of Thrones, had been banned in military schools belonging to the Turkish army, in order to protect young people from: "sexual exploitation, pornography, exhibitionism, abuse, harassment and all negative behaviours" (dragons weren’t mentioned).</string>
+    <string name="tvshow_got_fun_fact_2">2</string>
+    <string name="tvshow_got_fun_fact_3">3</string>
+    <string name="tvshow_got_fun_fact_4">4</string>
+    <string name="tvshow_got_fun_fact_5">5</string>
+
+    <string name="tvshow_2andahalf_fun_fact_1">In 2008 Charlie Sheen was earning $300,000 per episode. By 2011 he was being paid $1.8 million per episode, making him the highest paid actor on TV at the time</string>
+    <string name="tvshow_2andahalf_fun_fact_2">2</string>
+    <string name="tvshow_2andahalf_fun_fact_3">3</string>
+    <string name="tvshow_2andahalf_fun_fact_4">4</string>
+    <string name="tvshow_2andahalf_fun_fact_5">5</string>
+
+    <string name="tvshow_tbbt_fun_fact_1">In 2008 Charlie Sheen was earning $300,000 per episode. By 2011 he was being paid $1.8 million per episode, making him the highest paid actor on TV at the time</string>
+    <string name="tvshow_tbbt_fun_fact_2">fact 2</string>
+    <string name="tvshow_tbbt_fun_fact_3">fact 3</string>
+    <string name="tvshow_tbbt_fun_fact_4">fact 4</string>
+    <string name="tvshow_tbbt_fun_fact_5">fact 5</string>
 
 </resources>

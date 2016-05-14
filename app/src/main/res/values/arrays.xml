@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="temperature_units_values">
+        <item>@string/tvshow_friends_fun_fact_1</item>
+        <item>@string/tvshow_friends_fun_fact_2</item>
+        <item>@string/tvshow_friends_fun_fact_3</item>
+        <item>@string/tvshow_friends_fun_fact_4</item>
+        <item>@string/tvshow_friends_fun_fact_5</item>
+    </string-array>
+
+</resources>

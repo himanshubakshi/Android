@@ -1,72 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none"
     tools:context="com.himanshubakshi.funtvfacts.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@android:color/black">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
 
-        <RelativeLayout
-            android:id="@+id/tvshow_friends_card"
-            style="@style/TVShowCardStyle"
-            android:onClick="tvshow_card_click">
-
-            <ImageView
-                style="@style/TVShowCardImageStyle"
-                android:src="@drawable/tvshow_friends_card_background" />
-
-            <TextView
-                style="@style/TVShowCardNameStyle"
-                android:text="@string/tvshow_name_friends" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/tvshow_himym_card"
-            style="@style/TVShowCardStyle"
-            android:onClick="tvshow_card_click">
-
-            <ImageView
-                style="@style/TVShowCardImageStyle"
-                android:src="@drawable/tvshow_himym_card_background" />
-
-            <TextView
-                style="@style/TVShowCardNameStyle"
-                android:text="@string/tvshow_name_himym" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/tvshow_got_card"
-            style="@style/TVShowCardStyle"
-            android:onClick="tvshow_card_click">
-
-            <ImageView
-                style="@style/TVShowCardImageStyle"
-                android:src="@drawable/tvshow_got_card_background" />
-
-            <TextView
-                style="@style/TVShowCardNameStyle"
-                android:text="@string/tvshow_name_got" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/tvshow_2_and_a_half_men_card"
-            style="@style/TVShowCardStyle"
-            android:onClick="tvshow_card_click">
-
-            <ImageView
-                style="@style/TVShowCardImageStyle"
-                android:src="@drawable/tvshow_2andahalfmen_card_background" />
-
-            <TextView
-                style="@style/TVShowCardNameStyle"
-                android:text="@string/tvshow_name_2_and_a_half_men" />
-        </RelativeLayout>
-    </LinearLayout>
-</ScrollView>
+</FrameLayout>
