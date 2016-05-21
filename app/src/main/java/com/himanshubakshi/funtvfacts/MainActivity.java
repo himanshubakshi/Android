@@ -12,6 +12,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Main Activity for the App.
+ * Loads the main layout which has the recycler view for showing the TV Shows
+ */
 public class MainActivity extends AppCompatActivity {
 
     public final static String TV_SHOW_NAME = "tv_show_name";
@@ -44,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
         prepartTvShowData();
     }
 
+    /**
+     * Prepares the data which would be rendered in the App
+     * showList is used in the Main Activity to see the list of TV Shows
+     * MyFunFactsDictionary is used by the detail activity to show the fun facts for a Show
+     */
     private void prepartTvShowData() {
         showList.add(new TVShow(R.string.tvshow_name_friends, R.drawable.tvshow_friends_card_background));
         showList.add(new TVShow(R.string.tvshow_name_himym, R.drawable.tvshow_himym_card_background));

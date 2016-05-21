@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
+/**
+ * The Detail Activity Class that is used to render the detail view for any TV Show.
+ * This is the single activity used for all the TV Shows.
+ */
 public class FunFactDetailActivity extends AppCompatActivity {
 
     int currentIndex = 0;

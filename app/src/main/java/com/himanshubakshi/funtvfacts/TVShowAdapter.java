@@ -2,6 +2,8 @@ package com.himanshubakshi.funtvfacts;
 
 /**
  * Created by hbakshi on 5/14/16.
+ *
+ *
  */
 
 import android.content.Intent;
@@ -16,6 +18,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+/**
+ * The RecyclerView adapter that creates the TV show cards based on the orientation
+ */
 public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHolder> {
 
     private List<TVShow> showList;
