@@ -47,6 +47,13 @@ public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHold
         final MyViewHolder myViewHolder = new MyViewHolder(itemView);
 
         itemView.setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * The click listener on the RecyclerView.
+             * Once you tap a TV  Show card, this listener would be hit and will launch the Detail Activity with
+             * the context for the TV Show to be shown
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 TVShow TVShow = showList.get(myViewHolder.getAdapterPosition());
