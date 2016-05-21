@@ -9,7 +9,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 /**
- * A placeholder fragment containing a simple view.
+ * The fragment to show the fun fact details
+ * Each fun fact will be rendered in it's own fragment, based on the view pager's index
  */
 public class ShowDetailFragment extends Fragment {
 
@@ -48,8 +49,6 @@ public class ShowDetailFragment extends Fragment {
 
         TextView funFactTextView = (TextView) view.findViewById(R.id.fun_fact_detail_text_view);
         funFactTextView.setText(mFunFactText);
-
-//        ((ScrollView)view.findViewById(R.id.detail_scroll_view)).setScrollY(0);
 
         return view;
     }

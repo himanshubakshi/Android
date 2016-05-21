@@ -9,6 +9,10 @@ import android.support.v7.widget.Toolbar;
 
 import java.util.List;
 
+/**
+ * Detail Activity where the view pager is hosted
+ * The fun facts for TV Shows will be displayed here
+ */
 public class DetailActivity extends AppCompatActivity {
 
     private static String LOG_TAG = DetailActivity.class.getName();
@@ -22,6 +26,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        overridePendingTransition(R.anim.in_right,0);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

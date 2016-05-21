@@ -16,9 +16,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FunFactDetailActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail"
             android:parentActivityName=".MainActivity"
