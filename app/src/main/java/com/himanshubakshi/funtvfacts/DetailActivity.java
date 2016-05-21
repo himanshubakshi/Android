@@ -4,10 +4,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import java.util.List;
 
@@ -16,7 +14,6 @@ public class DetailActivity extends AppCompatActivity {
     private static String LOG_TAG = DetailActivity.class.getName();
     private static int NUM_ITEMS;
 
-    int currentIndex = 0;
     private static int currentShowId;
 
     FragmentPagerAdapter adapterViewPager;
@@ -32,12 +29,15 @@ public class DetailActivity extends AppCompatActivity {
         currentShowId = getIntent().getExtras().getInt(MainActivity.TV_SHOW_NAME);
         setTitle(getString(currentShowId));
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.detail_view_pager);
+        CustomViewPager viewPager = (CustomViewPager) findViewById(R.id.detail_view_pager);
+        viewPager.setOnSwipeOutListener(new MySwipeOutListener());
+
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
 
         NUM_ITEMS = MainActivity.MyFunFactsDictionary.get(currentShowId).size();
         adapterViewPager.notifyDataSetChanged();
+
     }
 
     public static class MyPagerAdapter extends FragmentPagerAdapter {
@@ -74,6 +74,23 @@ public class DetailActivity extends AppCompatActivity {
 
         private String getFactIndexText(int showId, int position) {
             return (position + 1) + "/" + NUM_ITEMS;
+        }
+    }
+
+    public interface OnSwipeOutListener {
+        void onSwipeOutAtStart();
+
+        void onSwipeOutAtEnd();
+    }
+
+    public class MySwipeOutListener implements OnSwipeOutListener {
+        public void onSwipeOutAtStart() {
+            finish();
+            overridePendingTransition(0,R.anim.out_right);
+        }
+
+        public void onSwipeOutAtEnd() {
+
         }
     }
 }
