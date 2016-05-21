@@ -1,11 +1,11 @@
 package com.himanshubakshi.funtvfacts;
 
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.Menu;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private List<TvShow> showList = new ArrayList<>();
     public static Map<Integer, List<CharSequence>> MyFunFactsDictionary;
 
-
-    private RecyclerView recyclerView;
+    private RecyclerView mRecyclerView;
     private TvShowAdapter mAdapter;
 
 
@@ -29,13 +28,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+            mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+        }
+        else{
+            mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        }
 
         mAdapter = new TvShowAdapter(showList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        mRecyclerView.setAdapter(mAdapter);
 
         prepartTvShowData();
     }
@@ -48,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         showList.add(new TvShow(R.string.tvshow_name_tbbt, R.drawable.tvshow_the_big_bang_theory_background));
 
         mAdapter.notifyDataSetChanged();
-
 
         List<CharSequence> friendsFactsList = new ArrayList<>();
         friendsFactsList.add(getText(R.string.tvshow_friends_fun_fact_1));
@@ -93,12 +96,5 @@ public class MainActivity extends AppCompatActivity {
         MyFunFactsDictionary.put(R.string.tvshow_name_2_and_a_half_men, twoAndAHalfMenFactsList);
         MyFunFactsDictionary.put(R.string.tvshow_name_got, gotFactsList);
         MyFunFactsDictionary.put(R.string.tvshow_name_tbbt, tbbtFactsList);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
     }
 }

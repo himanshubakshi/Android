@@ -3,6 +3,7 @@ package com.himanshubakshi.funtvfacts;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -47,8 +48,6 @@ public class FunFactDetailActivity extends AppCompatActivity {
         return (currentIndex + 1) + "/" + listSize;
     }
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,35 +61,36 @@ public class FunFactDetailActivity extends AppCompatActivity {
         myFunFactDetailTextView = (TextView) findViewById(R.id.fun_fact_detail_text_view);
         myFunFactIndexTextView = (TextView) findViewById(R.id.fun_fact_index_text_view);
 
-
         // Not sure if the condition is valid
         if (currentShowId > 0) {
             myFunFactDetailTextView.setText(getContent(currentShowId));
             myFunFactIndexTextView.setText(getIndexText(currentShowId));
         }
 
-        // Click listener for the next buttonqcaSW
+        // Click listener for the next button
         findViewById(R.id.funFactNextButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ++currentIndex;
                 myFunFactDetailTextView.setText(getContent(currentShowId));
                 myFunFactIndexTextView.setText(getIndexText(currentShowId));
+                resetScroll();
             }
         });
 
-        // Click listener for the next buttonqcaSW
+        // Click listener for the next button
         findViewById(R.id.funFactPrevButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 --currentIndex;
                 myFunFactDetailTextView.setText(getContent(currentShowId));
                 myFunFactIndexTextView.setText(getIndexText(currentShowId));
+                resetScroll();
             }
         });
-
-
     }
 
-//    private void prepare
+    private void resetScroll(){
+        ((ScrollView)findViewById(R.id.detail_scroll_view)).setScrollY(0);
+    }
 }
