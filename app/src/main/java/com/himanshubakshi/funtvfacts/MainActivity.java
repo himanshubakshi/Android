@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     public final static String TV_SHOW_NAME = "tv_show_name";
 
-    private List<TvShow> showList = new ArrayList<>();
+    private List<TVShow> showList = new ArrayList<>();
     public static Map<Integer, List<CharSequence>> MyFunFactsDictionary;
 
     private RecyclerView mRecyclerView;
-    private TvShowAdapter mAdapter;
+    private TVShowAdapter mAdapter;
 
 
     @Override
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         }
 
-        mAdapter = new TvShowAdapter(showList);
+        mAdapter = new TVShowAdapter(showList);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mRecyclerView.setAdapter(mAdapter);
 
@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepartTvShowData() {
-        showList.add(new TvShow(R.string.tvshow_name_friends, R.drawable.tvshow_friends_card_background));
-        showList.add(new TvShow(R.string.tvshow_name_himym, R.drawable.tvshow_himym_card_background));
-        showList.add(new TvShow(R.string.tvshow_name_got, R.drawable.tvshow_got_card_background));
-        showList.add(new TvShow(R.string.tvshow_name_2_and_a_half_men, R.drawable.tvshow_2andahalfmen_card_background));
-        showList.add(new TvShow(R.string.tvshow_name_tbbt, R.drawable.tvshow_the_big_bang_theory_background));
+        showList.add(new TVShow(R.string.tvshow_name_friends, R.drawable.tvshow_friends_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_himym, R.drawable.tvshow_himym_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_got, R.drawable.tvshow_got_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_2_and_a_half_men, R.drawable.tvshow_2andahalfmen_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_tbbt, R.drawable.tvshow_the_big_bang_theory_background));
 
         mAdapter.notifyDataSetChanged();
 

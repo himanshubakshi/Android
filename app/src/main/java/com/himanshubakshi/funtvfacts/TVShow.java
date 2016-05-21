@@ -3,9 +3,9 @@ package com.himanshubakshi.funtvfacts;
 /**
  * Created by hbakshi on 5/14/16.
  */
-public class TvShow {
+public class TVShow {
 
-    public TvShow(int showNameId, int showImageId) {
+    public TVShow(int showNameId, int showImageId) {
         this.showNameId = showNameId;
         this.showImageId = showImageId;
     }

@@ -16,9 +16,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.MyViewHolder> {
+public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHolder> {
 
-    private List<TvShow> showList;
+    private List<TVShow> showList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView showName;
@@ -31,8 +31,8 @@ public class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.MyViewHold
         }
     }
 
-    public TvShowAdapter(List<TvShow> tvShowList) {
-        this.showList = tvShowList;
+    public TVShowAdapter(List<TVShow> TVShowList) {
+        this.showList = TVShowList;
     }
 
     @Override
@@ -44,9 +44,9 @@ public class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.MyViewHold
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TvShow tvShow = showList.get(myViewHolder.getAdapterPosition());
+                TVShow TVShow = showList.get(myViewHolder.getAdapterPosition());
                 Intent intent = new Intent(parent.getContext(), FunFactDetailActivity.class);
-                intent.putExtra(MainActivity.TV_SHOW_NAME, tvShow.getShowNameId());
+                intent.putExtra(MainActivity.TV_SHOW_NAME, TVShow.getShowNameId());
                 parent.getContext().startActivity(intent);
             }
         });
@@ -57,7 +57,7 @@ public class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        TvShow show = showList.get(position);
+        TVShow show = showList.get(position);
         holder.showName.setText(holder.itemView.getContext().getText(show.getShowNameId()));
         holder.showImage.setImageResource(show.getShowImageId());
     }
