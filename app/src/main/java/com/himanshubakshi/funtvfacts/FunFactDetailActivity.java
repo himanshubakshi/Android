@@ -28,14 +28,11 @@ public class FunFactDetailActivity extends AppCompatActivity {
             if (currentIndex <= 0) {
                 currentIndex = 0;
                 findViewById(R.id.funFactPrevButton).setVisibility(View.GONE);
-            }
-            else if(currentIndex == showFacts.size() - 1){
+            } else if (currentIndex == showFacts.size() - 1) {
                 findViewById(R.id.funFactNextButton).setVisibility(View.GONE);
-            }
-            else if(currentIndex == showFacts.size()) {
+            } else if (currentIndex == showFacts.size()) {
                 currentIndex = showFacts.size() - 1;
-            }
-            else{
+            } else {
                 // TODO: could use some optimization
                 findViewById(R.id.funFactNextButton).setVisibility(View.VISIBLE);
                 findViewById(R.id.funFactPrevButton).setVisibility(View.VISIBLE);
@@ -94,7 +91,7 @@ public class FunFactDetailActivity extends AppCompatActivity {
         });
     }
 
-    private void resetScroll(){
-        ((ScrollView)findViewById(R.id.detail_scroll_view)).setScrollY(0);
+    private void resetScroll() {
+        ((ScrollView) findViewById(R.id.detail_scroll_view)).setScrollY(0);
     }
 }

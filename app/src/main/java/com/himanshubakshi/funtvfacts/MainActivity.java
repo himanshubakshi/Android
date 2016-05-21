@@ -34,10 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
-        }
-        else{
+        } else {
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         }
 
