@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
      * MyFunFactsDictionary is used by the detail activity to show the fun facts for a Show
      */
     private void prepartTvShowData() {
-        showList.add(new TVShow(R.string.tvshow_name_friends, R.drawable.tvshow_friends_card_background));
-        showList.add(new TVShow(R.string.tvshow_name_himym, R.drawable.tvshow_himym_card_background));
-        showList.add(new TVShow(R.string.tvshow_name_got, R.drawable.tvshow_got_card_background));
-        showList.add(new TVShow(R.string.tvshow_name_2_and_a_half_men, R.drawable.tvshow_2andahalfmen_card_background));
-        showList.add(new TVShow(R.string.tvshow_name_tbbt, R.drawable.tvshow_the_big_bang_theory_background));
+        showList.add(new TVShow(R.string.tvshow_name_friends, R.drawable.high_tvshow_friends_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_himym, R.drawable.high_tvshow_himym_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_got, R.drawable.high_tvshow_got_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_2_and_a_half_men, R.drawable.high_tvshow_2andahalfmen_card_background));
+        showList.add(new TVShow(R.string.tvshow_name_tbbt, R.drawable.high_tvshow_the_big_bang_theory_background));
 
         mAdapter.notifyDataSetChanged();
 
