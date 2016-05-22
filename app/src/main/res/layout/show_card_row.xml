@@ -8,7 +8,6 @@
     <ImageView
         android:id="@+id/card_image"
         style="@style/TVShowCardImageStyle" />
-
     <TextView
         android:id="@+id/card_show_name"
         style="@style/TVShowCardNameStyle" />
