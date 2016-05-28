@@ -3,6 +3,7 @@ package com.himanshubakshi.funtvfacts;
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 
 /**
@@ -35,7 +36,8 @@ public class CustomViewPager extends ViewPager {
                 mStartDragX = x;
                 break;
             case MotionEvent.ACTION_MOVE:
-                if (mStartDragX < x && getCurrentItem() == 0) {
+                float xdiff = x - mStartDragX;
+                if (mStartDragX < x && getCurrentItem() == 0 && xdiff > 50.0) {
                     mListener.onSwipeOutAtStart();
                 } else if (mStartDragX > x && getCurrentItem() == getAdapter().getCount() - 1) {
                     mListener.onSwipeOutAtEnd();
