@@ -15,14 +15,14 @@ import android.view.MotionEvent;
 public class CustomViewPager extends ViewPager {
 
     float mStartDragX;
-    DetailActivity.OnSwipeOutListener mListener;
+    OnSwipeOutListener mListener;
 
     public CustomViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
 
-    public void setOnSwipeOutListener(DetailActivity.OnSwipeOutListener listener) {
+    public void setOnSwipeOutListener(OnSwipeOutListener listener) {
         mListener = listener;
     }
 

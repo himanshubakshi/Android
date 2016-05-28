@@ -84,16 +84,11 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
-    public interface OnSwipeOutListener {
-        void onSwipeOutAtStart();
-        void onSwipeOutAtEnd();
-    }
-
     /**
      * This class helps identify a swipe out at the first page, or at the last page
      * of the view pager
      */
-    public class MySwipeOutListener implements OnSwipeOutListener {
+     class MySwipeOutListener implements OnSwipeOutListener {
 
         public void onSwipeOutAtStart() {
             finish();

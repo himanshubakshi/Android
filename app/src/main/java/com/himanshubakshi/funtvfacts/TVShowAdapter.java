@@ -23,7 +23,7 @@ import java.util.List;
  */
 public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHolder> {
 
-    private List<TVShow> showList;
+    private List<TVShow> mShowList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView showName;
@@ -37,7 +37,7 @@ public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHold
     }
 
     public TVShowAdapter(List<TVShow> TVShowList) {
-        this.showList = TVShowList;
+        this.mShowList = TVShowList;
     }
 
     @Override
@@ -56,9 +56,9 @@ public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHold
              */
             @Override
             public void onClick(View v) {
-                TVShow TVShow = showList.get(myViewHolder.getAdapterPosition());
+                TVShow TVShow = mShowList.get(myViewHolder.getAdapterPosition());
                 Intent intent = new Intent(parent.getContext(), DetailActivity.class);
-                intent.putExtra(MainActivity.TV_SHOW_NAME, TVShow.getShowNameId());
+                intent.putExtra(MainActivity.TV_SHOW_NAME, TVShow.getmShowNameId());
                 parent.getContext().startActivity(intent);
             }
         });
@@ -69,13 +69,13 @@ public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        TVShow show = showList.get(position);
-        holder.showName.setText(holder.itemView.getContext().getText(show.getShowNameId()));
-        holder.showImage.setImageResource(show.getShowImageId());
+        TVShow show = mShowList.get(position);
+        holder.showName.setText(holder.itemView.getContext().getText(show.getmShowNameId()));
+        holder.showImage.setImageResource(show.getmShowImageId());
     }
 
     @Override
     public int getItemCount() {
-        return showList.size();
+        return mShowList.size();
     }
 }

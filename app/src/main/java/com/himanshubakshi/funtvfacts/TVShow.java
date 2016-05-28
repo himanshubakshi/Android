@@ -10,18 +10,18 @@ package com.himanshubakshi.funtvfacts;
 public class TVShow {
 
     public TVShow(int showNameId, int showImageId) {
-        this.showNameId = showNameId;
-        this.showImageId = showImageId;
+        this.mShowNameId = showNameId;
+        this.mShowImageId = showImageId;
     }
 
-    private int showNameId;
-    public int getShowNameId() {
-        return showNameId;
+    private int mShowNameId;
+    public int getmShowNameId() {
+        return mShowNameId;
     }
 
-    private int showImageId;
-    public int getShowImageId() {
-        return showImageId;
+    private int mShowImageId;
+    public int getmShowImageId() {
+        return mShowImageId;
     }
 }
 
