@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="tvshow_name_friends">
+    <string-array name="tvshow_detail_friends">
         <item>@string/tvshow_friends_fun_fact_1</item>
         <item>@string/tvshow_friends_fun_fact_2</item>
         <item>@string/tvshow_friends_fun_fact_3</item>
@@ -8,7 +8,7 @@
         <item>@string/tvshow_friends_fun_fact_5</item>
     </string-array>
 
-    <string-array name="tvshow_name_tbbt">
+    <string-array name="tvshow_detail_tbbt">
         <item>@string/tvshow_tbbt_fun_fact_1</item>
         <item>@string/tvshow_tbbt_fun_fact_2</item>
         <item>@string/tvshow_tbbt_fun_fact_3</item>
@@ -16,7 +16,7 @@
         <item>@string/tvshow_tbbt_fun_fact_5</item>
     </string-array>
 
-    <string-array name="tvshow_name_got">
+    <string-array name="tvshow_detail_got">
         <item>@string/tvshow_got_fun_fact_1</item>
         <item>@string/tvshow_got_fun_fact_2</item>
         <item>@string/tvshow_got_fun_fact_3</item>
@@ -24,7 +24,7 @@
         <item>@string/tvshow_got_fun_fact_5</item>
     </string-array>
 
-    <string-array name="tvshow_name_himym">
+    <string-array name="tvshow_detail_himym">
         <item>@string/tvshow_himym_fun_fact_1</item>
         <item>@string/tvshow_himym_fun_fact_2</item>
         <item>@string/tvshow_himym_fun_fact_3</item>
@@ -32,7 +32,7 @@
         <item>@string/tvshow_himym_fun_fact_5</item>
     </string-array>
 
-    <string-array name="tvshow_name_2_and_a_half_men">
+    <string-array name="tvshow_detail_2_and_a_half_men">
         <item>@string/tvshow_2andahalf_fun_fact_1</item>
         <item>@string/tvshow_2andahalf_fun_fact_2</item>
         <item>@string/tvshow_2andahalf_fun_fact_3</item>

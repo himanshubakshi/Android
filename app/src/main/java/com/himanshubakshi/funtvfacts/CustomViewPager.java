@@ -12,7 +12,6 @@ import android.view.MotionEvent;
  * Custom View Pager that can intercept swipe events
  * at at the beginning and at the end of the views
  */
-
 public class CustomViewPager extends ViewPager {
 
     float mStartDragX;
@@ -26,7 +25,6 @@ public class CustomViewPager extends ViewPager {
     public void setOnSwipeOutListener(DetailActivity.OnSwipeOutListener listener) {
         mListener = listener;
     }
-
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
