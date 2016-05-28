@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 public class DetailActivity extends AppCompatActivity {
 
     private static String LOG_TAG = DetailActivity.class.getName();
-    private static int NUM_ITEMS;
+    private static int mShowDetailArrayLength;
 
     private static CharSequence[] mShowDetailArray;
 
@@ -42,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
         viewPager.setOnSwipeOutListener(new MySwipeOutListener());
         viewPager.setAdapter(mAdapterViewPager);
 
-        NUM_ITEMS = mShowDetailArray.length;
+        mShowDetailArrayLength = mShowDetailArray.length;
         mAdapterViewPager.notifyDataSetChanged();
     }
 
@@ -55,13 +55,13 @@ public class DetailActivity extends AppCompatActivity {
         // Returns total number of pages
         @Override
         public int getCount() {
-            return NUM_ITEMS;
+            return mShowDetailArrayLength;
         }
 
         // Returns the fragment to display for that page
         @Override
         public Fragment getItem(int position) {
-            if (position < NUM_ITEMS) {
+            if (position < mShowDetailArrayLength) {
                 CharSequence content = getFunFactText(position);
                 CharSequence index = getFactIndexText(position);
 
@@ -80,7 +80,7 @@ public class DetailActivity extends AppCompatActivity {
 
         // Get the current show detail index
         private String getFactIndexText(int position) {
-            return (position + 1) + "/" + NUM_ITEMS;
+            return (position + 1) + "/" + mShowDetailArrayLength;
         }
     }
 
